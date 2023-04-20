@@ -1,12 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Самостійна робота</title>
+  <style>
+    .container {
+      display: flex;
+      margin: 0 auto;
+      max-width: 500px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .wrapper {
+      display: flex;
+    }
+    .block-div {
+      width: 10%;
+      min-width: 100px;
+      height: 100px;
+      text-align: center;
+      margin: 10px;
+      background-color: rgb(19, 100, 231);
+    }
+    .style-button {
+      margin-right: 5px; 
+      padding: 5px;
+    }
+    </style>
 </head>
-<body>
-  <h1>Test</h1>
-</body>
+  <body>
+  <center>
+    <h3><p>Кнопки для керування кольорами сайту</p></h3>
+    <input class = "style-button" type="button" value="Фон сайту 'Чорний'" onclick="BackgroundColor('black')">
+    <input class = "style-button" type="button" value="Фон сайту 'Білий'" onclick="BackgroundColor('white')">
+    <input class = "style-button" type="button" value="Колір тексту 'Чорний'" onclick="FontColor('black')">
+    <input class = "style-button" type="button" value="Колір тексту 'Білий'" onclick="FontColor('white')">
+    <input class = "style-button" type="button" value="Зміна шрифту" onclick="ChangeFonts()">   
+    <h1>Сайт для ЛР№18-6</h1>
+    <h3>Виконав студент групи ПСК-19 Бойко Денис</h3>
+    <h4>Додавання блоків</h4>
+      <div class="container">
+        <div class = "wrapper" id = "blocks">
+          <div class = "block-div">1</div>
+        </div>
+      </div>
+      <br>
+      <input class = "style-button" type="button" value="Додати блок перед" onclick="AddBlockFirst()">
+      <input class = "style-button" type="button" value="Додати блок після" onclick="AddBlockEnd()"><br>
+      <h2>Штучний інтелект</h2>
+  </center>
+  <img src="2.jpg" width = "320" height="240" align = "left" hspace = "10px">
+  <p align = "justify">
+    У більшості випадків алгоритм розв'язання завдання невідомий наперед. 
+    Точного визначеннпаирпаря цієї науки немає,питпртрп оскільки у філософії не розв'язано питання про природу і статус людського інтелекту. 
+    Немає і точного критерію досягнення комп'ютером «розумності», хоча перед штучним інтелектом було запропоновано низку гіпотез, 
+    наприклад, тест Тюрінга або гіпотеза Ньюелла-Саймона. 
+    Нині існує багато підходів як до розуміння задач штучного інтелекту, так і до створення інтелектуальних систем.
+  </p>
+  <img src="3.jpg" width = "320" height="240" align = "right" hspace = "10px">
+  <p align = "justify">
+    Машинне навчання — це розділ штучного інтелекту, що має за основу побудову та дослідження систем, 
+    які можуть самостійно навчатись з даних. 
+    Наприклад, система машинного навчання може бути натренована на електронних повідомленнях для розрізняння спаму і прийнятних повідомлень. 
+    Після навчання вона може бути використана для класифікації нових повідомлень електронної пошти на спам та не-спам. 
+    В основі машинного навчання розглядаються уявлення та узагальнення. 
+    Представлення даних і функцій оцінки цих даних є частиною всіх систем машинного навчання, наприклад, 
+    у наведеному вище прикладі, повідомлення електронною поштою, ми можемо уявити лист як набір англійських слів, 
+    просто відмовившись від порядку слів. Узагальнення є властивістю, яку система буде застосовувати добре на невидимих примірниках даних; 
+    умови, за яких це може бути гарантовано, є ключовим об'єктом вивчення в полі обчислювальної теорії навчання. 
+    Існує широкий спектр завдань машинного навчання та успішних застосувань. 
+    Оптичне розпізнавання символів, в яких друковані символи розпізнаються автоматично, та ґрунтуються на попередніх прикладах, 
+    є класичним підходом техніки машинного навчання. 
+    1959 року Артур Самуїл визначив машинне навчання як «Поле дослідження, яке дає комп'ютерам можливість навчатися, 
+    не будучи явно запрограмованими».
+    </p>
+    <p align = "justify">
+      Хоча проблема «штучного інтелекту» тісно пов'язана з потребами практики, тут немає єдиної загальної практичної задачі, 
+      яка б однозначно визначала розвиток теорії, проте є багато задач, які є частковими, вузькими. 
+      Тому проблема «штучного інтелекту» — це фактично цілий комплекс проблем, які характеризуються різним ступенем загальності, 
+      абстрактності, складності й розробленості і кожній з яких властиві свої принципові й практичні труднощі. 
+      Це такі проблеми, як розпізнавання образів, навчання й самонавчання, евристичне програмування, 
+      створення загальної теорії самоорганізовуваних систем, побудова фізичної моделі нейрона та ін., 
+      багато з яких мають велике самостійне значення. Для всіх цих напрямів одержано важливі результати, як практичного, 
+      так і теоретичного характеру, продовжуються інтенсивні дослідження.
+    </p>
+    <p align="center">
+      <img src="1.jpg">
+      <h2><center>Дякую за увагу :3</center></h2> 
+    </p>
+    <script type="text/javascript">
+      let kil = 2;
+      const BackgroundColor = (color) => {
+        let body = document.querySelector('body')
+        body.style.backgroundColor = color
+      }
+      const FontColor = (color) => {
+        let body = document.querySelector('body')
+        body.style.color = color;
+      }
+      let block = document.getElementById('blocks')
+      const AddBlockEnd = () => {
+        let div_end = document.createElement('div')
+        div_end.appendChild(document.createTextNode(kil++))
+        div_end.classList.add('block-div')
+        block.appendChild(div_end)
+      }
+      const AddBlockFirst = () => {
+        let first_el = block.firstChild;
+        let div_start = document.createElement('div')
+        div_start.appendChild(document.createTextNode(kil++))
+        div_start.classList.add('block-div')
+        block.insertBefore(div_start, first_el)
+      }
+      const ChangeFonts = () => {
+        let fonts = '';
+        fonts = prompt('Ласкаво просимо, оберіть шрифт, який вам потрібен','Roboto')
+        document.body.style.fontFamily = fonts
+      }
+    </script> 
+  </body>
 </html>
